@@ -27,7 +27,9 @@ BuildRequires: cmake(Qt6ToolsTools)
 BuildRequires: cmake(Qt6)
 BuildRequires: cmake(Qt6QuickTest)
 BuildRequires: cmake(Qt6Concurrent)
+BuildRequires: pkgconfig(iso-codes)
 Requires: %{libname} = %{EVRD}
+Requires: iso-codes
 
 %description
 KDE libraries for internationalization
