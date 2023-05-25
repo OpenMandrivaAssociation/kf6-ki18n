@@ -1,6 +1,6 @@
 %define libname %mklibname KF6I18n
 %define devname %mklibname KF6I18n -d
-%define git 20230513
+%define git 20230525
 
 Name: kf6-ki18n
 Version: 5.240.0
@@ -67,14 +67,6 @@ KDE libraries for internationalization
 %ninja_install -C build
 
 %find_lang %{name} --all-name --with-qt --with-html
-
-# This seems to be not yet updated?
-if ls %{buildroot}%{_datadir}/locale/*/*/ki18n5 &>/dev/null; then
-	rm -rf %{buildroot}%{_datadir}/locale/*/*/ki18n5
-else
-	echo "The workaround for remaining ki18n5 translations can be removed."
-	exit 1
-fi
 
 for i in %{buildroot}%{_datadir}/locale/*/LC_SCRIPTS/*; do
 	L=$(echo $i |rev |cut -d/ -f3 |rev)
