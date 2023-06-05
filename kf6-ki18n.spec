@@ -1,6 +1,6 @@
 %define libname %mklibname KF6I18n
 %define devname %mklibname KF6I18n -d
-%define git 20230527
+%define git 20230605
 
 Name: kf6-ki18n
 Version: 5.240.0
