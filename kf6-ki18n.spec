@@ -1,6 +1,6 @@
 %define libname %mklibname KF6I18n
 %define devname %mklibname KF6I18n -d
-%define git 20230927
+%define git 20231005
 
 Name: kf6-ki18n
 Version: 5.240.0
@@ -80,7 +80,6 @@ done
 %{_includedir}/KF6/KI18n
 %{_includedir}/KF6/KI18nLocaleData
 %{_libdir}/cmake/KF6I18n
-%{_qtdir}/mkspecs/modules/qt_KI18n.pri
 %{_qtdir}/doc/KF6I18n.*
 
 %files -n %{libname}
