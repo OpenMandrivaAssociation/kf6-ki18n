@@ -25,6 +25,7 @@ BuildRequires: cmake(Qt6Network)
 BuildRequires: cmake(Qt6Test)
 BuildRequires: cmake(Qt6QmlTools)
 BuildRequires: cmake(Qt6Qml)
+BuildRequires: cmake(Qt6QmlCore)
 BuildRequires: cmake(Qt6GuiTools)
 BuildRequires: cmake(Qt6QuickTest)
 BuildRequires: cmake(Qt6DBusTools)
@@ -34,6 +35,7 @@ BuildRequires: cmake(Qt6)
 BuildRequires: cmake(Qt6QuickTest)
 BuildRequires: cmake(Qt6Concurrent)
 BuildRequires: pkgconfig(iso-codes)
+BuildRequires: gettext
 Requires: %{libname} = %{EVRD}
 Requires: iso-codes
 
