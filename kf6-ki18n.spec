@@ -6,7 +6,7 @@
 
 Name: kf6-ki18n
 Version: 5.247.0
-Release: %{?git:0.%{git}.}1
+Release: %{?git:0.%{git}.}2
 %if 0%{?git:1}
 Source0: https://invent.kde.org/frameworks/ki18n/-/archive/master/ki18n-master.tar.bz2#/ki18n-%{git}.tar.bz2
 %else
@@ -54,6 +54,8 @@ KDE libraries for internationalization
 Summary: Development files for %{name}
 Group: Development/C
 Requires: %{libname} = %{EVRD}
+# KI18n cmake rules rely on msg* tools
+Requires: gettext
 
 %description -n %{devname}
 Development files (Headers etc.) for %{name}.
