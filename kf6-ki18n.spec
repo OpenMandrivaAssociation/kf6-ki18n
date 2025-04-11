@@ -6,8 +6,8 @@
 #define git 20240217
 
 Name: kf6-ki18n
-Version: 6.12.0
-Release: %{?git:0.%{git}.}3
+Version: 6.13.0
+Release: %{?git:0.%{git}.}1
 %if 0%{?git:1}
 Source0: https://invent.kde.org/frameworks/ki18n/-/archive/master/ki18n-master.tar.bz2#/ki18n-%{git}.tar.bz2
 %else
