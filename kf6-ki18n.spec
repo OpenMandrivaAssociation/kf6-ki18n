@@ -6,7 +6,7 @@
 #define git 20240217
 
 Name: kf6-ki18n
-Version: 6.14.0
+Version: 6.15.0
 Release: %{?git:0.%{git}.}1
 %if 0%{?git:1}
 Source0: https://invent.kde.org/frameworks/ki18n/-/archive/master/ki18n-master.tar.bz2#/ki18n-%{git}.tar.bz2
@@ -91,7 +91,6 @@ done
 %{_includedir}/KF6/KI18n
 %{_includedir}/KF6/KI18nLocaleData
 %{_libdir}/cmake/KF6I18n
-%{_qtdir}/doc/KF6I18n.*
 
 %files -n %{libname}
 %{_libdir}/libKF6I18n.so*
