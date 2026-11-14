@@ -90,6 +90,7 @@ done
 %files -n %{devname}
 %{_includedir}/KF6/KI18n
 %{_includedir}/KF6/KI18nLocaleData
+%{_includedir}/KF6/KI18nQml
 %{_libdir}/cmake/KF6I18n
 
 %files -n %{libname}
